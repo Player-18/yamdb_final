@@ -49,9 +49,10 @@ jobs:
         - name: executing remote ssh commands to deploy
           uses: appleboy/ssh-action@master
           with:
-            host: 62.84.117.221
-            username: trofimov
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USER }}
             key: ${{ secrets.SSH_KEY }}
+            passphrase: ${{ secrets.PASSPHRASE }}
             stack_file_name: docker-compose.yaml
             script: |
               sudo docker pull ${{ secrets.DOCKER_USERNAME }}/infra
