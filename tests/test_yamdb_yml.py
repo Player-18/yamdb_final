@@ -17,7 +17,7 @@ class TestWorkflow:
 
         if not is_yaml and not is_yml:
             assert False, (
-                'В корневом каталоге проекта не найден файл с описанием workflow '
+                'В корневом каталоге проекта не найден файл с описанием workflows '
                 f'{yaml} или {yml}.\n'
                 '(Это нужно для проверки тестами на платформе)'
             )
