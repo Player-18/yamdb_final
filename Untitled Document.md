@@ -1,3 +1,3 @@
 YAMDB_FINAL:
 
-https://github.com/Player-18/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+(https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=pull_request)
