@@ -18,7 +18,7 @@ from users.serializers import (EmailRegistrationSerializer, UserSerializer,
 class CreateUser(generics.CreateAPIView):
     """
     Создаем пользователя POST запросом, с параметром email.
-    В ответ получаем письмо с кодом подтверждения.
+    В ответ получаем письмо с кодом подтверждения1.
     """
     permission_classes = (AllowAny, )
     serializer_class = EmailRegistrationSerializer
